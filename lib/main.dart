@@ -7,33 +7,19 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: <Widget>[
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/anu18.jpg'),
+                backgroundColor: Colors.white,
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green[200],
-                  )
-                ],
-              ),
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.blue,
+              Text(
+                'Anushree Maurya',
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               )
             ],
           ),
