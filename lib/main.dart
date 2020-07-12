@@ -19,7 +19,7 @@ void main() {
                 style: TextStyle(
                     fontSize: 40,
                     fontFamily: 'Lobster',
-                    color: Colors.grey.shade300,
+                    color: Colors.white,
                     letterSpacing: 1),
               ),
               Text(
@@ -30,54 +30,40 @@ void main() {
                     fontFamily: 'Quicksand',
                     letterSpacing: 3),
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50),
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20),
+                child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      height: 10,
-                      width: 30,
-                    ),
-                    Text(
+                    title: Text(
                       '+91 8791604430',
                       style: TextStyle(
                           fontFamily: 'Quicksand',
                           color: Colors.teal,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2),
-                    )
-                  ],
-                ),
+                    )),
               ),
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white),
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 50),
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.email, color: Colors.teal),
-                    SizedBox(
-                      height: 10,
-                      width: 30,
-                    ),
-                    Text(
-                      'anushrimaurya@gmail.com',
-                      style: TextStyle(
-                          fontFamily: 'Quicksand',
-                          color: Colors.teal,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    'anushrimaurya@gmail.com',
+                    style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             ],
